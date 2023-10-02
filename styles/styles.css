@@ -1,0 +1,19 @@
+.welcome {
+  background-image: url(../images/first-screen/index-background.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+  /*  background-size: 100% auto;  */
+}
+
+.welcome-img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*.servise-house {
+  background-image: url(../images/index-icons/house-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: top center 150px;
+}*/
