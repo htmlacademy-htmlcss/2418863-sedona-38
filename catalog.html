@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <div>
         <a class="logo">
-          <img class="logo-img" src="" width="" height="" alt="logo">
+          <img class="logo-img" src="images/header/logo.svg" width="140" height="70" alt="logo">
         </a>
       </div>
       <nav class="navigation">
@@ -37,7 +38,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button class="search-button">Хочу сюда!</button>
+            <button class="search-button button-brown">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -102,8 +103,8 @@
                         </div>
                     </fieldset>
                     <div class="filter-button">
-                        <button class="button-applay" type="submit">Применить</button>
-                        <button class="button-reset" type="reset">Сбросить</button>
+                        <button class="button-applay button-blue" type="submit">Применить</button>
+                        <button class="button-reset button-brown" type="reset">Сбросить</button>
                     </div>
                 </form>
             </div>
@@ -118,13 +119,13 @@
                 <option value="expensive">Сначала дорогие</option>
             </select>
             <a href="#">
-              <img class="list-icon" src="#" alt="Плитка">
+              <img class="list-icon" src="images/catalog/sorting/tile-icon.svg" alt="Плитка">
             </a>
             <a href="#">
-              <img class="slideshow-icon" src="#" alt="Слайдшоу">
+              <img class="slideshow-icon" src="images/catalog/sorting/slideshow-icon.svg" alt="Слайдшоу">
             </a>
             <a href="#">
-              <img class="tile-icon" src="#" alt="Список">
+              <img class="tile-icon" src="images/catalog/sorting/list-icon.svg" alt="Список">
             </a>
           </div>
 
@@ -139,12 +140,12 @@
                 </a>
                 <p class="catalog-type"> Гостиницы</p>
                 <p class="catalog-price"> От 4000 р</p>
-                <a class="catalog-hotel-link" href="#">Подробнее</a>
-                <button  class="button-hotel-blue" type="button" name="show_more">Избранное</button>
+                <a class="catalog-hotel-link button-brown" href="#">Подробнее</a>
+                <button  class="button-hotel-blue button-blue" type="button" name="show_more">Избранное</button>
                 <p class="stars stars-4">
                   <span class="visually-hidden">Четырёхзвёздный отель</span>
                 </p>
-                <p class="rating"> Рейтинг:8.5</p>
+                <p class="rating button-grey"> Рейтинг:8.5</p>
               </li>
 
               <li class="catalog-item">
@@ -156,12 +157,12 @@
                 </a>
                 <p class="catalog-type"> Гостиницы</p>
                 <p class="catalog-price"> От 5000 р</p>
-                <a class="catalog-hotel-link" href="#">Подробнее</a>
-                <button  class="button-hotel-blue" type="button" name="show_more">Избранное</button>
+                <a class="catalog-hotel-link button-brown" href="#">Подробнее</a>
+                <button  class="button-hotel-blue button-green" type="button" name="show_more"> В избранном</button>
                 <p class="stars stars-4">
                   <span class="visually-hidden">Четырёхзвёздный отель</span>
                 </p>
-                <p class="rating"> Рейтинг:9.2</p>
+                <p class="rating button-grey"> Рейтинг:9.2</p>
               </li>
 
               <li class="catalog-item">
@@ -173,12 +174,12 @@
                 </a>
                 <p class="catalog-type"> Гостиницы</p>
                 <p class="catalog-price"> От 2500 р</p>
-                <a class="catalog-hotel-link" href="#">Подробнее</a>
-                <button  class="button-hotel-blue" type="button" name="show_more">Избранное</button>
+                <a class="catalog-hotel-link button-brown" href="#">Подробнее</a>
+                <button  class="button-hotel-blue button-blue" type="button" name="show_more">Избранное</button>
                 <p class="stars stars-3">
                   <span class="visually-hidden">Трёхзвёздный отель</span>
                 </p>
-                <p class="rating"> Рейтинг:6.9</p>
+                <p class="rating button-grey"> Рейтинг:6.9</p>
               </li>
 
               <li class="catalog-item">
@@ -190,12 +191,12 @@
                 </a>
                 <p class="catalog-type"> Гостиницы</p>
                 <p class="catalog-price"> От 1500 р</p>
-                <a class="catalog-hotel-link" href="#">Подробнее</a>
-                <button  class="button-hotel-blue" type="button" name="show_more">Избранное</button>
+                <a class="catalog-hotel-link button-brown" href="#">Подробнее</a>
+                <button  class="button-hotel-blue button-blue" type="button" name="show_more">Избранное</button>
                 <p class="stars stars-2">
                   <span class="visually-hidden">Двухзвёздный отель</span>
                 </p>
-                <p class="rating"> Рейтинг:5.0</p>
+                <p class="rating button-grey"> Рейтинг:5.0</p>
               </li>
             </ul>
           </div>
@@ -220,13 +221,13 @@
           </div>
         </section>
 
-        <div class="subscribe">
+        <div class="subscribe-catalog">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru">
                 <label class="visually-hidden" for="email-subscribe">Введите Ваш email</label>
                 <input class="subscribe-field" id="email-subscribe" type="email" placeholder="Ваш email"  required />
-                <button class="subscribe-button">Подписаться</button>
+                <button class="subscribe-button button-blue">Подписаться</button>
             </form>
         </div>
     </main>
