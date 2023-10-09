@@ -118,15 +118,23 @@
                 <option value="popular">Сначала популярные</option>
                 <option value="expensive">Сначала дорогие</option>
             </select>
-            <a href="#">
-              <img class="list-icon" src="images/catalog/sorting/tile-icon.svg" alt="Плитка">
-            </a>
-            <a href="#">
-              <img class="slideshow-icon" src="images/catalog/sorting/slideshow-icon.svg" alt="Слайдшоу">
-            </a>
-            <a href="#">
-              <img class="tile-icon" src="images/catalog/sorting/list-icon.svg" alt="Список">
-            </a>
+            <ul class="sorting-list">
+              <li class="sorting-item" >
+                <a href="#">
+                  <img class="list-icon" src="images/catalog/sorting/tile-icon.svg" alt="Плитка">
+                </a>
+              </li>
+              <li class="sorting-item">
+                <a href="#">
+                  <img class="slideshow-icon" src="images/catalog/sorting/slideshow-icon.svg" alt="Слайдшоу">
+                </a>
+              </li>
+              <li class="sorting-item">
+                <a href="#">
+                  <img class="tile-icon" src="images/catalog/sorting/list-icon.svg" alt="Список">
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="catalog-cards">
@@ -203,27 +211,19 @@
 
           <div class="pagination">
             <ul class="pagination-list">
-                <li class="pagination-item pagination-current"><span>1</span></li>
+                <li class="pagination-item"><a class="pagination-link pagination-link-current " href="#">1</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">...</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
             </ul>
-            <p class="select-hotel">
-                <span class="select-title">Гостиниц на странице</span>
-                <select class="select-hotel-control">
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-            </p>
           </div>
         </section>
 
         <div class="subscribe-catalog">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
+            <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru">
                 <label class="visually-hidden" for="email-subscribe">Введите Ваш email</label>
                 <input class="subscribe-field" id="email-subscribe" type="email" placeholder="Ваш email"  required />
@@ -231,21 +231,21 @@
             </form>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="main-footer footer">
       <section class="footer-social">
         <h2 class="visually-hidden" >Социальные сети</h2>
         <ul class="footer-social-list">
-          <li class="footer-social-item">
+          <li class="footer-social-item social-vk">
             <a class="button footer-link" href="#">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item social-tm">
             <a class="button footer-link" href="#">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item social-youtube">
             <a class="button footer-link" href="#">
               <span class="visually-hidden">Youtube</span>
             </a>
