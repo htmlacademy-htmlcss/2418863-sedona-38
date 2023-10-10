@@ -104,21 +104,21 @@ button {
 }
 
 .page-header {
+  width: 1200px;
+  height: 64px;
   background: #fff;
   color: #000;
 }
 
-.page-container {
-  width: 140px;
-  height: 70px;
-  margin-left: 70px;
-  margin-right: 30px;
-  margin-top: 0 px;
-
-}
 
 .main-container {
   flex-grow: 1;
+}
+
+.advantages-caption {
+  width: 1200px;
+  margin: 69px 0;
+
 }
 
 .navigation a {
@@ -145,7 +145,7 @@ button {
   justify-content: space-between;
   width: 350px;
   margin-left: 240px;
-  margin-top: -40px;
+  margin-top: -50px;
   list-style: none;
 }
 
@@ -154,8 +154,12 @@ button {
   justify-content: space-between;
   width: 268px;
   margin-left: 200px;
-  margin-top: -40px;
+  margin-top: -50px;
   list-style: none;
+}
+
+.navigation-favourites {
+  margin: 22px;
 }
 
 .advantages {
@@ -202,6 +206,14 @@ button {
   list-style-type: none;
 }
 
+.servise-slogan {
+  margin-top: 64px;
+}
+
+.servise-text {
+  margin-bottom: 64px;
+}
+
 .servise-item {
   display: flex;
   flex-direction: column;
@@ -209,7 +221,10 @@ button {
 }
 
 .search-button {
+  margin-right: 70px;
+  margin-left: 20px;
   width: 160px;
+  min-height: 36px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -292,6 +307,8 @@ button {
   line-height: 36px;
   font-weight: 700;
   color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
 
 
 }
@@ -325,7 +342,7 @@ button {
   width: 1200px;
   display: flex;
   justify-content: space-between;
-  /*padding: 40px 70px 30px;*/
+  padding-top: 0;
 }
 
 .footer-social-list {
@@ -381,6 +398,11 @@ button {
 
 /*Catalog*/
 
+.logo-catalog {
+  margin-left: 70px;
+  margin-right: 20px;
+}
+
 .header-filter {
   background-image: url(../images/catalog/filter/backgroud-filter.jpg);
   background-repeat: no-repeat;
@@ -401,11 +423,37 @@ button {
 
 .filter-form {
   display: flex;
+  width: 1060px;
+  height: 160px;
+  margin-left: 70px;
+  margin-right: 70px;
+  list-style: none;
+}
+
+.filter-group {
+  list-style: none;
 }
 
 .filter-button {
   display: flex;
   flex-direction: column;
+}
+
+.button-reset {
+  width: 193px;
+  min-height: 36px;
+  background: transparent;
+  margin-bottom: 14px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.button-applay {
+  width: 193px;
+  min-height: 36px;
+  margin-bottom: 36px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .catalog {
@@ -522,13 +570,24 @@ button {
 }
 
 
-
 .subscribe-catalog {
   width: 1200px;
   height: 414px;
+  margin-top: 50px;
 }
 
 .subscribe-form {
   display: flex;
   justify-content: center;
+}
+
+.subscribe-button {
+  width: 232px;
+  height: 52px;
+  outline: none;
+}
+
+.subscribe-field {
+  width: 452px;
+  height: 52px auto;
 }

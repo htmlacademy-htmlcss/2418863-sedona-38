@@ -9,7 +9,7 @@
 
     <header class="page-header">
       <div class="page-container">
-        <a class="logo">
+        <a class="logo-catalog">
           <img class="logo-img" src="images/header/logo.svg" width="140" height="70" alt="logo">
         </a>
       </div>
@@ -29,13 +29,15 @@
         <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="navigation-search">Поиск</span>
+              <span class="navigation-search"><img class="navigation-images-search" src="images/header/search.svg
+                "alt="search"></span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden"> Избранных отелей</span>
-              <span>12</span>
+              <span class="navigation-favourites"><img class="navigation-images-heart" src="images/header/heart.svg" alt="heart"></span>
+              
             </a>
           </li>
           <li class="navigation-item">
@@ -54,12 +56,17 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p class="advantages-slogan">
-          Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
-        </p>
-        <p class="advantages-reasons ">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-        </p>
+        <div class="advantages-caption">
+          <p class="advantages-slogan">
+            Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
+          </p>
+          <p class="advantages-reasons ">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+
+        </div>
+        
+
         <ul class="advantages-list">
           <li class="advantages-item" >
             <div class="advantages-wrapper-text">
@@ -154,7 +161,7 @@
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="email-subscribe">Введите Ваш email</label>
-          <input class="subscribe-field" id="email-subscribe" type="email" required>
+          <input class="subscribe-field" id="email-subscribe" type="email" placeholder="Ваш e-mail" required>
           <button class="subscribe-button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
