@@ -29,8 +29,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
-
-
 }
 
 .visually-hidden {
@@ -43,6 +41,16 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+.navigation a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+}
+
 
 h2 {
   font-size: 30px;
@@ -103,68 +111,109 @@ button {
   line-height: 26px;
 }
 
+/* HEADER*/
+
 .page-header {
   width: 1200px;
-  height: 64px;
   background: #fff;
-  color: #000;
+  outline: 5px solid rebeccapurple;
+  box-sizing: content-box;
 }
 
+.navigation {
+  width: 1060px;
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+
+.logo-navigation {
+  display: block;
+  margin-right: 30px;
+}
 
 .main-container {
   flex-grow: 1;
 }
 
-.advantages-caption {
-  width: 1200px;
-  margin: 69px 0;
-
-}
-
-.navigation a {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
-  text-decoration: none;
-  color: #000;
-}
-
-.navigation {
-  margin-top: 0;
-  display: flex;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-}
 
 .navigation-list {
   display: flex;
   justify-content: space-between;
   width: 350px;
-  margin-left: 240px;
-  margin-top: -50px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 20px 16px;
 }
 
-.navigation-user {
+.navigation-link {
+  display: block;
+}
+
+.navigation-user-list {
   display: flex;
-  justify-content: space-between;
   width: 268px;
-  margin-left: 200px;
-  margin-top: -50px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  padding: 14px 0 0 12px;
+
 }
 
 .navigation-favourites {
   margin: 22px;
 }
 
+.welcome {
+  background-image: url(../images/first-screen/index-background.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+  background-size: 100% auto;
+}
+
+.welcome-img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ADVANTAGES*/
+
 .advantages {
   width: 1200px;
+  outline: 2px solid rgb(236, 13, 199);
   text-align: center;
+}
+
+.advantages-header {
+  padding: 69px 0;
+  outline: 2px solid rgb(23, 10, 202);
+  margin-bottom: 20px;
+}
+
+.advantages-slogan {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-second-fone {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-fone {
+  background: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-wrapper-text {
+  background: #82B3D3;
+  color: #fff;
 }
 
 .advantages-list {
@@ -198,26 +247,62 @@ button {
   flex-direction: row-reverse;
 }
 
-.servise-list {
-  display: flex;
-  min-height: 385px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.servise {
+  padding: 64px 0;
+  outline: 2px solid greenyellow;
+
 }
 
+
 .servise-slogan {
-  margin-top: 64px;
+  max-width: 505px;
+  margin: 0 auto 20px;
+
 }
 
 .servise-text {
-  margin-bottom: 64px;
+  max-width: 490px;
+  margin: 0 auto;
 }
+
+.servise-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 .servise-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 385px;
+}
+
+.servise-house,
+.servise-souvenirs {
+  background: rgba(131, 179, 211, 0.20);
+}
+
+
+.search {
+  padding: 96px 304px;
+  text-align: center;
+}
+
+.search-title {
+  max-width: 297px;
+  margin: 0 auto 20px;
+}
+
+.search-data {
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto 54px;
 }
 
 .search-button {
@@ -230,45 +315,30 @@ button {
   font-weight: 700;
 }
 
-.welcome {
-  background-image: url(../images/first-screen/index-background.jpg);
+.subscribe {
+  background-image: url(../images/index-photo/subscribe-background.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
   background-size: 100% auto;
-}
-
-
-
-.welcome-img {
-  display: block;
-  margin: 0 auto;
-}
-
-.advantages-slogan {
-  font-family: "PT Sans";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-
-.advantages-second-fone {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-fone {
-  background: rgba(131, 179, 211, 0.20);
-
-}
-
-.advantages-wrapper-text {
-  background: #82B3D3;
   color: #fff;
+  text-align: center;
+  padding: 96px 258px 104px;
 }
 
+.subscribe-title {
+  min-width: 404px;
+  margin: 0 auto 20px;
+}
+
+.subscribe-description {
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 54px;
+  max-width: 475px;
+  margin: 0 auto 54px;
+}
 
 /*.servise-house {
   background-image: url(../images/index-icons/house-icon.svg);
@@ -276,26 +346,6 @@ button {
   background-size: 75px 72px;
   background-position: top center 150px;
 }*/
-
-.servise-house,
-.servise-souvenirs {
-  background: rgba(131, 179, 211, 0.20);
-}
-
-.search {
-  width: 1200px;
-  padding: 96px 0 96px 0;
-  text-align: center;
-}
-
-.search-data {
-  text-align: center;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  margin-bottom: 54px;
-}
 
 .button-search {
   display: block;
@@ -309,27 +359,6 @@ button {
   color: #fff;
   border-radius: 4px;
   text-transform: uppercase;
-
-
-}
-
-.subscribe {
-  background-image: url(../images/index-photo/subscribe-background.jpg);
-  background-repeat: no-repeat;
-  width: 1200px;
-  background-size: 100% auto;
-  color: #fff;
-  text-align: center;
-  padding: 96px 0 104px 0;
-}
-
-.subscribe-description {
-  text-align: center;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  margin-bottom: 54px;
 }
 
 .subscribe-button {
@@ -338,15 +367,20 @@ button {
   line-height: 36px;
 }
 
+/* FOOTER*/
+
 .main-footer {
-  width: 1200px;
   display: flex;
   justify-content: space-between;
+
   padding-top: 0;
+  outline: 5px solid rebeccapurple;
+  padding: 40px 70px 30px;
 }
 
 .footer-social-list {
   display: flex;
+  min-height: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -357,7 +391,7 @@ button {
   background-repeat: no-repeat;
   width: 24px;
   height: 14px;
-  margin-left: 70px;
+  margin-right: 10px;
 
 }
 
@@ -366,9 +400,7 @@ button {
   background-repeat: no-repeat;
   width: 18px;
   height: 16px;
-  margin-left: 10px;
   margin-right: 10px;
-
 }
 
 .social-youtube {
@@ -376,6 +408,12 @@ button {
   background-repeat: no-repeat;
   width: 22px;
   height: 17px;
+}
+
+.footer-phone {
+  max-width: 720px;
+  margin: 0 auto;
+
 }
 
 
@@ -398,19 +436,21 @@ button {
 
 /*Catalog*/
 
-.logo-catalog {
-  margin-left: 70px;
-  margin-right: 20px;
-}
-
 .header-filter {
   background-image: url(../images/catalog/filter/backgroud-filter.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
   height: 412px;
   background-size: 100% auto;
   color: #fff;
   text-decoration: none;
+  padding: 35px 70px 70px;
+}
+
+.breadcrumbs-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #fff;
 }
 
 .inner-header-title {
@@ -425,9 +465,14 @@ button {
   display: flex;
   width: 1060px;
   height: 160px;
-  margin-left: 70px;
-  margin-right: 70px;
   list-style: none;
+}
+
+.filter-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #fff;
 }
 
 .filter-group {
@@ -456,11 +501,6 @@ button {
   margin-right: 70px;
 }
 
-.catalog {
-  width: 1200px;
-  height: 1200px;
-  padding-top: 50px;
-}
 
 .sorting-container {
   max-height: 49px;
@@ -490,6 +530,17 @@ button {
   padding: 0;
   display: flex;
 }
+
+.catalog {
+  outline: 2px solid salmon;
+  padding: 50px 70px 60px;
+}
+
+.catalog-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
 .catalog-list {
@@ -571,9 +622,7 @@ button {
 
 
 .subscribe-catalog {
-  width: 1200px;
-  height: 414px;
-  margin-top: 50px;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-form {
