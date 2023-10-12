@@ -6,45 +6,45 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <div>
-        <a class="logo">
-          <img class="logo-img" src="images/header/logo.svg" width="140" height="70" alt="logo">
-        </a>
-      </div>
+    <header class="page-header" data-test="header">
       <nav class="navigation">
+        <a class="logo-navigation"  href="index.html" aria-current="page">
+          <img class="logo-img" src="images/header/logo.svg" width="140" height="70" alt="Логотип города">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
-        <ul class="navigation-user">
+        <ul class="navigation-user-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="navigation-search">Поиск</span>
+              <span class="navigation-search"><img class="navigation-images-search" src="images/header/search.svg
+                "alt="search"></span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden"> Избранных отелей</span>
-              <span>12</span>
+              <span class="navigation-favourites"><img class="navigation-images-heart" src="images/header/heart.svg" alt="heart"></span>
+              
             </a>
           </li>
           <li class="navigation-item">
-            <button class="search-button button-brown">Хочу сюда!</button>
+            <button class="navigation-button button-brown">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="about">
+    <main class="main-container-catalog" data-test="main">
         <section class="header-filter">
             <div class="inner-header">
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -110,7 +110,7 @@
             </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <div class="sorting-container">
             <h2 class="sorting-title">Найдено гостиниц:38</h2>
             <select name="select-setting" aria-label="Сортировка">
@@ -118,15 +118,23 @@
                 <option value="popular">Сначала популярные</option>
                 <option value="expensive">Сначала дорогие</option>
             </select>
-            <a href="#">
-              <img class="list-icon" src="images/catalog/sorting/tile-icon.svg" alt="Плитка">
-            </a>
-            <a href="#">
-              <img class="slideshow-icon" src="images/catalog/sorting/slideshow-icon.svg" alt="Слайдшоу">
-            </a>
-            <a href="#">
-              <img class="tile-icon" src="images/catalog/sorting/list-icon.svg" alt="Список">
-            </a>
+            <ul class="sorting-list">
+              <li class="sorting-item" >
+                <a href="#">
+                  <img class="list-icon" src="images/catalog/sorting/tile-icon.svg" alt="Плитка">
+                </a>
+              </li>
+              <li class="sorting-item">
+                <a href="#">
+                  <img class="slideshow-icon" src="images/catalog/sorting/slideshow-icon.svg" alt="Слайдшоу">
+                </a>
+              </li>
+              <li class="sorting-item">
+                <a href="#">
+                  <img class="tile-icon" src="images/catalog/sorting/list-icon.svg" alt="Список">
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="catalog-cards">
@@ -203,49 +211,41 @@
 
           <div class="pagination">
             <ul class="pagination-list">
-                <li class="pagination-item pagination-current"><span>1</span></li>
+                <li class="pagination-item"><a class="pagination-link pagination-link-current " href="#">1</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">...</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
             </ul>
-            <p class="select-hotel">
-                <span class="select-title">Гостиниц на странице</span>
-                <select class="select-hotel-control">
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-            </p>
           </div>
         </section>
 
-        <div class="subscribe-catalog">
+        <div class="subscribe-catalog" data-test="subscribe">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
+            <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru">
                 <label class="visually-hidden" for="email-subscribe">Введите Ваш email</label>
-                <input class="subscribe-field" id="email-subscribe" type="email" placeholder="Ваш email"  required />
+                <input class="subscribe-field" id="email-subscribe" type="email" placeholder="Ваш e-mail" required>
                 <button class="subscribe-button button-blue">Подписаться</button>
             </form>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="main-footer footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden" >Социальные сети</h2>
         <ul class="footer-social-list">
-          <li class="footer-social-item">
+          <li class="footer-social-item social-vk">
             <a class="button footer-link" href="#">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item social-tm">
             <a class="button footer-link" href="#">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item social-youtube">
             <a class="button footer-link" href="#">
               <span class="visually-hidden">Youtube</span>
             </a>
@@ -259,7 +259,7 @@
       <section class="footer-author">
         <h2 class="visually-hidden">Разработка сайта</h2>
         <a class="footer-htmlacademy-link" href="#">
-          <img class="logo-img" src="images/footer/Logo-footer.svg" width="115" height="33" alt="logo-htmlacademy" >
+          <img class="footer-logo" src="images/footer/Logo-footer.svg" width="115" height="33" alt="logo-htmlacademy" >
         </a>
       </section>
     </footer>
