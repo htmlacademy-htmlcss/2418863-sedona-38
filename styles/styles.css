@@ -183,6 +183,8 @@ button {
 
 .welcome {
   background-image: url(../images/first-screen/index-background.jpg);
+  background-color: #756257;
+  color: #fff;
   background-repeat: no-repeat;
   height: 485px;
   background-size: 100% auto;
@@ -370,8 +372,10 @@ button {
   width: 1200px;
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
   outline: 5px solid rebeccapurple;
   padding: 40px 0;
+
 }
 
 .footer-social-list {
@@ -407,11 +411,8 @@ button {
 }
 
 .footer-phone {
-  max-width: 720px;
   margin: 0 auto;
-
 }
-
 
 .footer-phone-contact {
   color: #000;
@@ -423,6 +424,7 @@ button {
 
 .footer-logo {
   display: block;
+  margin-right: 70px;
 }
 
 
