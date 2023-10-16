@@ -640,7 +640,6 @@ button {
   margin: 0;
 }
 
-
 .sorting-list {
   display: flex;
   gap: 8px;
@@ -656,7 +655,6 @@ button {
   padding: 50px 70px 60px;
 }
 
-.catalog-cards {}
 
 .catalog-list {
   display: flex;
