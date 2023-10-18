@@ -649,9 +649,6 @@ button {
 
 }
 
-
-
-
 .sorting-title {
   font-size: 30px;
   font-style: normal;
@@ -724,14 +721,6 @@ button {
 .pagination {
   height: 60px;
 }
-
-/*
-.pagination {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}*/
 
 .pagination-list {
   display: flex;
