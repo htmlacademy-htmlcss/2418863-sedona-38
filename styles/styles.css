@@ -121,9 +121,9 @@ button {
   line-height: 26px;
 }
 
-/* HEADER*/
 
 .page-header {
+  min-height: 64px;
   background: #fff;
   outline: 5px solid rebeccapurple;
   box-sizing: content-box;
@@ -133,12 +133,16 @@ button {
   display: flex;
   padding-left: 70px;
   padding-right: 70px;
+
 }
 
 
 .logo-navigation {
   display: block;
   margin-right: 30px;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 2;
 }
 
 .navigation-list {
@@ -165,11 +169,11 @@ button {
   align-items: center;
   list-style-type: none;
   padding: 0;
-  margin-left: 0 auto;
+  margin-bottom: 8px;
 }
 
 .navigation-favourites {
-  margin: 22px;
+  padding: 22px 12px;
 }
 
 .navigation-button {
@@ -200,6 +204,7 @@ button {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 /* ADVANTAGES*/
@@ -269,13 +274,16 @@ button {
 
 
 .advantages-title {
-  margin: 103px auto 60px;
   max-width: 230px;
+  padding: 103px 85px 60px;
+  margin: 0;
 }
 
-.advantages-desription {
+.advantages-desсription {
   width: 230px;
-  margin: 0 auto;
+  padding: 0 85px 103px;
+  margin: 0;
+
 }
 
 
@@ -295,7 +303,7 @@ button {
 }
 
 .service-title {
-  margin: 185px auto 30px;
+  padding: 172px 80px 30px;
 }
 
 .service-text {
@@ -319,6 +327,7 @@ button {
 .service-description {
   max-width: 230px;
   margin: 0 auto;
+  padding: 0 85px 80px;
 }
 
 .service-house {
@@ -432,6 +441,7 @@ button {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   min-height: 40px;
   margin: 0;
   padding: 0;
@@ -505,16 +515,27 @@ button {
   padding: 0;
   margin: 0;
   list-style: none;
-  color: #fff;
+
 }
 
 .breadcrumbs-link-icon {
+  display: block;
   width: 20px;
   height: 21px;
   background-image: url(../images/catalog/filter/house.svg);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 12px 12px;
+  margin-right: 10px;
+}
+
+.breadcrumbs-link {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fff;
+
 }
 
 /*
