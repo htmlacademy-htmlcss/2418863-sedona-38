@@ -316,7 +316,7 @@ button {
 }
 
 .service-title {
-  padding: 172px 80px 30px;
+  margin: 102px 0 30px;
 }
 
 .service-text {
@@ -335,12 +335,14 @@ button {
 .service-item {
   width: 400px;
   min-height: 385px;
+  padding: 80px 85px;
+  box-sizing: border-box;
 }
 
 .service-description {
   max-width: 230px;
-  margin: 0 auto;
-  padding: 0 85px 80px;
+  margin: 0;
+
 }
 
 .service-house {
