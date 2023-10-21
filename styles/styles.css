@@ -705,11 +705,11 @@ button {
   padding: 50px 70px 60px;
 }
 
-.catalog-cards {
+/*.catalog-cards {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-bottom: 1px solid rgb(230, 230, 230);
-}
+  border-bottom: 1px solid rgb(230, 230, 230);}*/
+
 
 
 .catalog-list {
@@ -720,6 +720,9 @@ button {
   margin: 0;
   padding: 0;
   gap: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .catalog-item {
