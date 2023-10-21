@@ -331,8 +331,8 @@ button {
 }
 
 .service-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
   list-style-type: none;
   margin: 0;
   padding: 0;
