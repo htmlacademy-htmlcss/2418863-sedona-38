@@ -180,16 +180,10 @@ button {
   margin-left: auto;
 }
 
-.navigation-icons {
-  padding: 0 12px;
-  min-width: 44px;
-  box-sizing: border-box;
-}
-
 .navigation-user-link {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 64px;
   background-repeat: no-repeat;
   background-position: center;
   text-decoration: none;
@@ -203,15 +197,26 @@ button {
   background-image: url(../images/header/heart.svg);
 }
 
+.heart {
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  top: 11px;
+  left: 21px;
+  font-size: 10px;
+  line-height: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(125, 181, 79, 1);
+  border-radius: 50%;
+}
+
 .navigation-button {
   width: 160px;
   min-height: 36px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  padding: 8px 10px;
   margin-left: 20px;
-  font-family: inherit;
 }
 
 .main-container {
@@ -279,7 +284,7 @@ button {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
 }
@@ -356,7 +361,7 @@ button {
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -487,46 +492,34 @@ button {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 144px;
+  max-width: 250px;
   min-height: 40px;
-  margin: 0;
   padding: 0;
   list-style-type: none;
   align-items: center;
   margin: 5px 0;
 }
 
-.footer-social-item {
-  width: 44px;
-}
+.footer-social-item {}
 
 .footer-link {
   display: block;
+  width: 47px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-vk {
   background-image: url(../images/footer/vk-icon.svg);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 14px;
-
-
 }
 
 .social-tm {
   background-image: url(../images/footer/telegram-icon.svg);
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 16px;
-
 }
 
 .social-youtube {
   background-image: url(../images/footer/youtube.svg);
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 17px;
-
 }
 
 .footer-phone {
@@ -711,6 +704,7 @@ button {
 
 .sorting-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   list-style-type: none;
   margin: 0;
@@ -741,7 +735,7 @@ button {
   width: 340px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: min-content;
+  grid-template-rows: min-content 1fr;
   column-gap: 20px;
   row-gap: 16px;
   padding: 20px;
@@ -807,7 +801,7 @@ button {
   height: 17px;
   margin: 0;
   padding: 0;
-  background-image: url(../images/catalog/reiting-stars/stars.svg);
+  background-image: url(../images/catalog/rating-stars/stars.svg);
   background-repeat: repeat;
   align-items: center;
 }
@@ -903,7 +897,7 @@ button {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400s;
+  font-weight: 400;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(242, 242, 242, 1);
   border: none;
