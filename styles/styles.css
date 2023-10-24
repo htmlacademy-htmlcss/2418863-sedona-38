@@ -28,6 +28,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -226,14 +227,16 @@ button {
 
 
 .welcome {
-  background-image: url(../images/first-screen/index-background.jpg);
+  background-image: url(../images/first-screen/welcome-decoration.svg), url(../images/first-screen/index-background.jpg);
   background-color: #48D1CC;
   color: #fff;
   background-repeat: no-repeat;
   height: 485px;
-  background-size: 100% auto;
+  background-size: 100% auto, cover;
   padding: 51px 70px 30px;
+  background-position: bottom;
 }
+
 
 .welcome-img {
   display: block;
