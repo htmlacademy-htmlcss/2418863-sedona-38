@@ -36,7 +36,7 @@ body {
   height: 100%;
   max-width: 1200px;
   margin: auto;
-  /*box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.20);*/
+  box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.20);
 }
 
 .main-header,
@@ -226,6 +226,16 @@ button {
   margin-left: 20px;
 }
 
+.navigation-button:hover {
+  background: #615048;
+}
+
+.navigation-button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .main-container {
   width: 1200px;
   flex-grow: 1;
@@ -323,6 +333,18 @@ button {
   margin: 0;
   margin-bottom: 60px;
 }
+
+/* псевдоэлемент
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);*/
+
 
 .advantages-desсription {
   width: 230px;
@@ -479,6 +501,16 @@ button {
   padding: 8px 50px;
 }
 
+.button-search:hover {
+  background: #615048;
+}
+
+.button-search:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .subscribe-button {
   font-size: 20px;
   font-weight: 700;
@@ -486,6 +518,15 @@ button {
   width: 232px;
   outline: none;
 }
+
+.subscribe-button:hover {
+  background: rgba(104, 162, 202, 1);
+}
+
+.subscribe-button:active {
+  background-color: rgba(130, 179, 211, 1)
+}
+
 
 
 /* FOOTER*/
@@ -519,9 +560,8 @@ button {
 
 .footer-link:hover svg path,
 .footer-link:focus svg path {
-  fill: rgb(236, 13, 199);
-  /*fill: rgb(104,162,202);*/
-
+  /* fill: rgb(236, 13, 199);*/
+  fill: rgb(104, 162, 202);
 }
 
 .footer-link:active svg path {
@@ -529,11 +569,14 @@ button {
 }
 
 
-.footer-link:hover svg {
-  fill: rgb(236, 13, 199);
-  color: blue;
+.footer-htmlacademy-link:hover {
+  fill: #7DB54F;
 }
 
+/*
+.footer-link:hover svg {
+  fill: rgb(236, 13, 199);
+  color: blue;*/
 
 
 
@@ -549,10 +592,27 @@ button {
   text-decoration: none;
 }
 
+.footer-phone-contact:hover,
+.footer-phone-contact:focus {
+  color: #756157;
+}
+
+.footer-phone-contact:active {
+  color: rgba(117, 97, 87, 0.3)
+}
+
+/*
 .footer-logo {
   display: block;
   object-fit: contain;
+}*/
 
+.footer-htmlacademy:hover svg path {
+  fill: rgba(117, 97, 87, 1);
+}
+
+.footer-htmlacademy-link:hover {
+  color: #7DB54F;
 }
 
 
@@ -586,7 +646,7 @@ button {
   display: block;
   width: 20px;
   height: 21px;
-  background-image: url(../images/catalog/filter/bredcambs-house.svg);
+  background-image: url(../images/catalog/filter/bredcrumbs-house.svg);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 12px 12px;
@@ -686,6 +746,15 @@ button {
   margin-bottom: 36px;
 }
 
+.button-applay:hover {
+  background-color: #68A2CA;
+}
+
+.button-applay:active {
+  background-color: rgba(130, 179, 211, 1);
+}
+
+
 .sorting-container {
   display: flex;
   margin-bottom: 40px;
@@ -731,15 +800,19 @@ button {
   border: 2px solid #E5E5E5;
 }
 
+.sorting-current {
+  border: 2px solid #000;
+}
+
 .sorting-link-toggle:hover,
 .sorting-link-toggle:active {
-  /*border: 2px solid #000;*/
-  outline: 2px solid #000;
+  border: 2px solid #000;
+  outline: none;
 }
 
 .sorting-link-toggle:focus {
-  /*border: 2px solid #68A2CA;*/
-  outline: 2px solid #68A2CA;
+  outline: none;
+  border: 2px solid #68A2CA;
 }
 
 
@@ -836,18 +909,23 @@ button {
   min-height: 36px;
 }
 
-.button-hotel-blue:hover {
-  background-color: red;
+.catalog-hotel-link:hover {
+  background: #615048;
 }
 
+.catalog-hotel-link:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.button-hotel-blue:hover,
+.button-hotel-blue:focus {
+  background-color: #68A2CA;
+}
 
 .button-hotel-blue:active {
-  background-color: orange;
-}
-
-
-.button-hotel-blue:focus {
-  background-color: black;
+  background-color: rgba(130, 179, 211, 1);
 }
 
 
