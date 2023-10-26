@@ -116,6 +116,23 @@ button {
   background: #7DB54F;
 }
 
+.button-green:hover {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+/*
+.button-green:focus {
+  background-color: rgba(108, 158, 66, 1)
+}*/
+
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
 .advantages-reasons,
 .servise-text,
 .search-data {
@@ -501,12 +518,12 @@ button {
   padding: 8px 50px;
 }
 
-.button-search:hover {
+.button-search:hover,
+.button-search:focus {
   background: #615048;
 }
 
 .button-search:active {
-  background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -519,12 +536,13 @@ button {
   outline: none;
 }
 
-.subscribe-button:hover {
+.subscribe-button:hover,
+.subscribe-button:focus {
   background: rgba(104, 162, 202, 1);
 }
 
 .subscribe-button:active {
-  background-color: rgba(130, 179, 211, 1)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -560,7 +578,6 @@ button {
 
 .footer-link:hover svg path,
 .footer-link:focus svg path {
-  /* fill: rgb(236, 13, 199);*/
   fill: rgb(104, 162, 202);
 }
 
@@ -569,15 +586,9 @@ button {
 }
 
 
-.footer-htmlacademy-link:hover {
-  fill: #7DB54F;
+.footer-htmlacademy:hover {
+  fill: rgb(117, 97, 87);
 }
-
-/*
-.footer-link:hover svg {
-  fill: rgb(236, 13, 199);
-  color: blue;*/
-
 
 
 .footer-phone {
@@ -601,19 +612,24 @@ button {
   color: rgba(117, 97, 87, 0.3)
 }
 
-/*
-.footer-logo {
-  display: block;
-  object-fit: contain;
-}*/
 
 .footer-htmlacademy:hover svg path {
   fill: rgba(117, 97, 87, 1);
 }
 
-.footer-htmlacademy-link:hover {
-  color: #7DB54F;
+
+.footer-htmlacademy-link:hover svg path {
+  fill: #756157;
 }
+
+.footer-htmlacademy-link:focus svg path {
+  fill: #756157;
+}
+
+.footer-htmlacademy-link:active svg path {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 
 
@@ -750,8 +766,15 @@ button {
   background-color: #68A2CA;
 }
 
+.button-applay:focus {
+  background-color: #68A2CA;
+}
+
+
+
 .button-applay:active {
   background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -913,19 +936,28 @@ button {
   background: #615048;
 }
 
+/*
+.catalog-hotel-link:focus {
+  background: #615048;
+}*/
+
+
 .catalog-hotel-link:active {
-  background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
 
-.button-hotel-blue:hover,
-.button-hotel-blue:focus {
+.button-hotel-blue:hover {
   background-color: #68A2CA;
 }
 
+/*
+.button-hotel-blue:focus {
+  background-color: #68A2CA;
+}*/
+
 .button-hotel-blue:active {
-  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1000,13 +1032,43 @@ button {
   box-sizing: border-box;
   padding: 12px 0;
   border-radius: 4px;
-
 }
+
+.pagination-link:hover {
+  background-color: rgba(104, 162, 202, 1);
+  /* outline: 1px solid rgba(130, 179, 211, 1);*/
+}
+
+/*.pagination-link:focus {
+  background-color: rgba(104, 162, 202, 1);
+  outline: 1px solid rgba(130, 179, 211, 1);
+}*/
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .pagination-link-current {
   background: #F2F2F2;
   color: #000;
 }
+
+.pagination-link-spread {
+  background: white;
+  color: #000;
+}
+
+.pagination-link-spread:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.pagination-link-spread:active {
+  outline: 1px solid rgba(130, 179, 211, 1);
+  color: #000;
+}
+
 
 .subscribe-catalog {
   padding: 96px 258px 104px;
