@@ -617,17 +617,29 @@ button {
   fill: rgba(117, 97, 87, 1);
 }
 
-
-.footer-htmlacademy-link:hover svg path {
-  fill: #756157;
+/*Logo footer*/
+.footer-htmlacademy-link {
+  display: block;
+  box-sizing: border-box;
+  width: 115px;
+  height: 33px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-mask-image: url(../images/footer/logo-footer.svg);
+  mask-image: url(../images/footer/logo-footer.svg);
 }
 
-.footer-htmlacademy-link:focus svg path {
-  fill: #756157;
+.footer-htmlacademy-link:hover {
+  background-color: #756157;
 }
 
-.footer-htmlacademy-link:active svg path {
-  fill: rgba(117, 97, 87, 0.3);
+.footer-htmlacademy-link:focus {
+  background-color: #756157;
+}
+
+.footer-htmlacademy-link:active {
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 
@@ -841,7 +853,7 @@ button {
 
 
 .sorting-view-tile {
-  background-image: url(../images/catalog/sorting/tile-toggle.svg);
+  background-image: url(../images/catalog/sorting/tile-icon.svg);
 }
 
 .sorting-view-slideshow {
