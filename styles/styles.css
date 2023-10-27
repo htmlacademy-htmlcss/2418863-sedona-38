@@ -358,14 +358,14 @@ button {
   box-sizing: border-box;
 }
 
-
 .advantages-title {
+  position: relative;
   max-width: 230px;
   margin: 0;
   margin-bottom: 60px;
 }
 
-/* псевдоэлемент
+
 .advantages-title::after {
   content: "";
   position: absolute;
@@ -374,7 +374,8 @@ button {
   left: 50%;
   margin-left: -30px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.30);*/
+  background-color: rgba(0, 0, 0, 0.30);
+}
 
 
 .advantages-desсription {
@@ -548,6 +549,7 @@ button {
   line-height: 36px;
   width: 232px;
   outline: none;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .subscribe-button:hover,
@@ -684,9 +686,25 @@ button {
   gap: 10px;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url(../images/catalog/filter/breadcrumbs-arrow.svg);
+  width: 7px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  top: 5px;
+}
+
 .breadcrumbs-link-icon {
   display: block;
-  width: 20px;
+  width: 13px;
   height: 21px;
   background-image: url(../images/catalog/filter/bredcrumbs-house.svg);
   background-repeat: no-repeat;
@@ -701,7 +719,9 @@ button {
   line-height: 21px;
   color: #fff;
   text-decoration: none;
+  margin-left: 17px;
 }
+
 
 .inner-header-title {
   font-size: 60px;
@@ -757,6 +777,47 @@ button {
 
 .range {
   display: flex;
+  margin-bottom: 36px;
+  gap: 2px;
+}
+
+.range-cost {
+  position: relative;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.range-price {
+  position: absolute;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  opacity: 0.3;
+  right: 20px;
+  top: 13px;
+}
+
+.range-fild {
+  width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  border: none;
+}
+
+.range-fild-from {
+  border-radius: 4px 0px 0px 4px;
+}
+
+
+.range-fild-to {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.range-slaider {
+  height: 20px;
+  background-color: #7DB54F;
 }
 
 .filter-group {
@@ -777,10 +838,6 @@ button {
 .button-reset {
   min-height: 36px;
   background: transparent;
-}
-
-.range-cost {
-  margin-bottom: 36px;
 }
 
 .button-applay {

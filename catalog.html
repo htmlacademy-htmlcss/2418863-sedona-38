@@ -86,19 +86,21 @@
                             </ul>
                       </fieldset>
                       <fieldset class="filter-group filter-range">
-                          <legend class="filter-title">Стоимость,P</legend>
-                          <div class="range">
-                            <label class="range-cost" for="price-min">
-                              <span class="range-price">От</span>
-                              <input class="range-fild" type="number" value="0"  id="price-min">
-                            </label>
-                            <label class="range-cost"  for="price-max">
-                              <span class="range-price">До</span>
-                              <input class="range-fild" type="number" value="9000" id="price-max">
-                            </label>
-                          </div>
-                          <!--Переделать range-->
-                         <!-- <input type="range" min="0" max="100" step="1" value="50">--> <!--Переделать range-->
+                        <legend class="filter-title">Стоимость,P</legend>
+                        <div class="range">
+                          <label class="range-cost" for="price-min">
+                            <span class="range-price">oт</span>
+                            <input class="range-fild range-fild-from" type="number" value="0"  id="price-min">
+                          </label>
+                          <label class="range-cost"  for="price-max">
+                            <span class="range-price">до</span>
+                            <input class="range-fild range-fild-to" type="number" value="9000" id="price-max">
+                          </label>
+                        </div>
+                        <div class="range-slaider">
+                            <!--Переделать range-->
+                          <!-- <input type="range" min="0" max="100" step="1" value="50">--> <!--Переделать range-->
+                        </div>
                       </fieldset>
                       <div class="filter-button">
                           <button class="button-applay button-blue" type="submit">Применить</button>
