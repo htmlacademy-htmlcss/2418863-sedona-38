@@ -962,25 +962,24 @@ button {
 
 
 .stars {
-  display: grid;
   height: 17px;
   margin: 0;
   padding: 0;
   background-image: url(../images/catalog/rating-stars/stars.svg);
-  background-repeat: repeat;
-  align-items: center;
+  background-repeat: space repeat;
+  align-self: center;
 }
 
 .stars-four {
-  width: 72px;
+  width: 78px;
 }
 
 .stars-three {
-  width: 54px;
+  width: 66px;
 }
 
 .stars-two {
-  width: 36px;
+  width: 42px;
 }
 
 .rating {
