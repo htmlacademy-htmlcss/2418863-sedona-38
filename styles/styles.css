@@ -193,6 +193,20 @@ button {
   color: #000;
 }
 
+.navigation-current {
+  position: relative;
+}
+
+.navigation-current::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #756257;
+  bottom: -20px;
+  width: 100%;
+
+}
+
 
 .navigation-user-list {
   display: flex;
