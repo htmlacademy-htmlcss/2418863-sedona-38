@@ -99,6 +99,24 @@ button {
   border: none;
 }
 
+/*
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+}*/
+
 .button-blue {
   background: #82B3D3;
 }
@@ -120,10 +138,10 @@ button {
   background-color: rgba(108, 158, 66, 1);
 }
 
-/*
+
 .button-green:focus {
-  background-color: rgba(108, 158, 66, 1)
-}*/
+  outline: 3px solid rgb(131, 179, 211)
+}
 
 
 .button-green:active {
@@ -146,7 +164,6 @@ button {
 
 .main-header {
   min-height: 64px;
-  outline: 5px solid rebeccapurple;
 }
 
 .navigation {
@@ -154,7 +171,6 @@ button {
   padding-left: 70px;
   padding-right: 70px;
 }
-
 
 .logo-navigation {
   display: block;
@@ -204,7 +220,6 @@ button {
   background-color: #756257;
   bottom: -20px;
   width: 100%;
-
 }
 
 
@@ -261,17 +276,19 @@ button {
   background: #615048;
 }
 
+.navigation-button:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
 .navigation-button:active {
   background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .main-container {
   width: 1200px;
   flex-grow: 1;
 }
-
 
 .welcome {
   background-image: url(../images/first-screen/welcome-decoration.svg), url(../images/first-screen/index-background.jpg);
@@ -284,7 +301,6 @@ button {
   background-position: bottom;
 }
 
-
 .welcome-img {
   display: block;
   margin: 0 auto;
@@ -294,13 +310,11 @@ button {
 /* ADVANTAGES*/
 
 .advantages {
-  outline: 2px solid rgb(236, 13, 199);
   text-align: center;
 }
 
 .advantages-header {
   padding: 69px 0;
-  outline: 2px solid rgb(23, 10, 202);
   margin-bottom: 20px;
 }
 
@@ -348,8 +362,6 @@ button {
   grid-column: 1 / -1;
 }
 
-
-
 .advantages-wrapper-text {
   width: 400px;
   background: #82B3D3;
@@ -365,7 +377,6 @@ button {
   margin-bottom: 60px;
 }
 
-
 .advantages-title::after {
   content: "";
   position: absolute;
@@ -376,7 +387,6 @@ button {
   height: 2px;
   background-color: rgba(0, 0, 0, 0.30);
 }
-
 
 .advantages-desсription {
   width: 230px;
@@ -389,7 +399,6 @@ button {
   /*object-fit: contain;*/
 }
 
-
 .advantages-reverse {
   flex-direction: row-reverse;
 }
@@ -399,12 +408,10 @@ button {
   width: 400px;
   padding: 112px 85px;
   box-sizing: border-box;
-
 }
 
 .service {
   padding: 64px 0;
-  outline: 2px solid greenyellow;
 }
 
 
@@ -447,7 +454,7 @@ button {
   background-image: url(../images/index-icons/house-icon.svg);
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: center top 80px
+  background-position: center top 80px;
 }
 
 
@@ -459,7 +466,7 @@ button {
 }
 
 .service-souvenirs {
-  background-image: url(../images/index-icons/souvenirs-icon.svg);
+  background-image: url(../images/index-icons/box-icon.svg);
   background-repeat: no-repeat;
   background-size: 75px 72px;
   background-position: center top 80px
@@ -533,12 +540,16 @@ button {
   padding: 8px 50px;
 }
 
-.button-search:hover,
-.button-search:focus {
+.button-search:hover {
   background: #615048;
 }
 
+.button-search:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
 .button-search:active {
+  background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -552,15 +563,17 @@ button {
   border-radius: 0px 4px 4px 0px;
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-button:hover {
   background: rgba(104, 162, 202, 1);
+}
+
+.subscribe-button:focus {
+  outline: 3px solid rgb(131, 179, 211);
 }
 
 .subscribe-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 
 /* FOOTER*/
@@ -569,7 +582,6 @@ button {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  outline: 5px solid rebeccapurple;
   padding: 40px 70px 30px 70px;
 }
 
@@ -658,9 +670,6 @@ button {
   background-color: rgba(117, 97, 87, 0.3);
 }
 
-
-
-
 /*Catalog*/
 
 .header-filter {
@@ -685,6 +694,31 @@ button {
   list-style: none;
   gap: 10px;
 }
+
+.breadcrumbs-link:hover {
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.breadcrumbs-link:active {
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link-icon:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link-icon:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.breadcrumbs-link-icon:active {
+  opacity: 0.3;
+}
+
 
 .breadcrumbs-item {
   position: relative;
@@ -783,7 +817,19 @@ button {
 
 .range-cost {
   position: relative;
-  background-color: rgba(242, 242, 242, 1);
+
+}
+
+.range-cost:hover {
+  background-color: #E6E6E6;
+}
+
+.range-cost:focus:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.range-fild:focus {
+  outline: 3px solid rgb(131, 179, 211);
 }
 
 .range-price {
@@ -804,7 +850,14 @@ button {
   line-height: 24px;
   font-weight: 700;
   border: none;
+  background-color: rgba(242, 242, 242, 1);
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 
 .range-fild-from {
   border-radius: 4px 0px 0px 4px;
@@ -819,6 +872,7 @@ button {
   height: 20px;
   background-color: #7DB54F;
 }
+
 
 .filter-group {
   border: none;
@@ -840,6 +894,10 @@ button {
   background: transparent;
 }
 
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .button-applay {
   min-height: 36px;
   margin-bottom: 36px;
@@ -850,16 +908,13 @@ button {
 }
 
 .button-applay:focus {
-  background-color: #68A2CA;
+  outline: 3px solid rgb(131, 179, 211);
 }
-
-
 
 .button-applay:active {
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .sorting-container {
   display: flex;
@@ -872,7 +927,32 @@ button {
   margin-left: auto;
   margin-right: 70px;
   box-sizing: border-box;
+  padding: 14px 20px;
+  font: inherit;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  appearance: none;
+  font-weight: 400;
+  line-height: 21px;
+  background-image: url(../images/catalog/sorting/tick.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 50%;
+
 }
+
+.select-setting:hover {
+  border: 2px solid rgb(104, 162, 202);
+}
+
+.select-setting:focus {
+  border: 2px solid rgb(104, 162, 202);
+}
+
+.select-setting:disabled {
+  cursor: default;
+  border: 5px solid rgb(0, 0, 0.3);
+}
+
 
 .sorting-title {
   font-size: 30px;
@@ -882,6 +962,22 @@ button {
   text-transform: uppercase;
   margin: 0;
 }
+
+/*
+.select-setting {
+  position: relative;
+}
+
+.select-setting::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url(../images/catalog/sorting/tick.svg);
+  width: 7px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+*/
 
 .sorting-list {
   display: flex;
@@ -921,8 +1017,6 @@ button {
   border: 2px solid #68A2CA;
 }
 
-
-
 .sorting-view-tile {
   background-image: url(../images/catalog/sorting/tile-icon.svg);
 }
@@ -937,7 +1031,6 @@ button {
 
 /* CARDS*/
 .catalog {
-  outline: 2px solid salmon;
   padding: 50px 70px 60px;
 }
 
@@ -1019,11 +1112,9 @@ button {
   background: #615048;
 }
 
-/*
 .catalog-hotel-link:focus {
-  background: #615048;
-}*/
-
+  outline: 3px solid rgb(131, 179, 211);
+}
 
 .catalog-hotel-link:active {
   color: rgba(255, 255, 255, 0.3);
@@ -1034,10 +1125,9 @@ button {
   background-color: #68A2CA;
 }
 
-/*
 .button-hotel-blue:focus {
-  background-color: #68A2CA;
-}*/
+  outline: 3px solid rgb(131, 179, 211);
+}
 
 .button-hotel-blue:active {
   color: rgba(255, 255, 255, 0.3);
@@ -1121,19 +1211,23 @@ button {
   /* outline: 1px solid rgba(130, 179, 211, 1);*/
 }
 
-/*.pagination-link:focus {
+.pagination-link:focus {
   background-color: rgba(104, 162, 202, 1);
   outline: 1px solid rgba(130, 179, 211, 1);
-}*/
+}
 
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .pagination-link-current {
   background: #F2F2F2;
   color: #000;
+}
+
+.pagination-link-current:hover {
+  outline: 1px solid rgba(130, 179, 211, 1);
+  background: #F2F2F2;
 }
 
 .pagination-link-spread {
@@ -1150,7 +1244,6 @@ button {
   outline: 1px solid rgba(130, 179, 211, 1);
   color: #000;
 }
-
 
 .subscribe-catalog {
   padding: 96px 258px 104px;
@@ -1171,4 +1264,8 @@ button {
   border: none;
   border-radius: 4px 0 0 4px;
   width: 452px;
+}
+
+.subscribe-field:focus {
+  outline: 3px solid rgb(131, 179, 211);
 }
