@@ -61,30 +61,43 @@
               </div>
               <div>
                   <form class="filter-form" action="https://echo.htmlacademy.ru">
-                      <fieldset class="filter-group-one">
+                      <fieldset class="filter-infrastructure">
                           <legend class="filter-title">Инфрасткрутура:</legend>
                           <ul class="filter-list">
                               <li class="filter-item">
-                                  <label class="filter-conrol">
-                                      <input name="guruweba" type="checkbox" checked>Бассейн
-                                  </label>
+                                <input class="filter-checkbox" type="checkbox" name="infrastructure" id="checkbox-pool" value="pool"checked>
+                                <label class="filter-conrol" for="checkbox-pool">Бассейн</label>      
                               </li>
-                              <li class="filter-item"><input name="guruweba" type="checkbox" checked />Парковка</li>
-                              <li class="filter-item"><input name="guruweba" type="checkbox" />Wi-fi</li>
+                              <li class="filter-item">
+                                <input class="filter-checkbox"  type="checkbox" name="infrastructure" id="checkbox-parking" value="parking"checked>
+                                <label class="filter-conrol" for="checkbox-parking">Парковка</label>      
+                              </li>
+                              <li class="filter-item">
+                                <input class="filter-checkbox"  type="checkbox" name="infrastructure" id="checkbox-Wi-fi" value="Wi-fi">
+                                <label class="filter-conrol" for="checkbox-Wi-fi">Wi-fi</label>      
+                              </li>
                             </ul>
                       </fieldset>
-                      <fieldset class="filter-group-two">
+
+                      <fieldset class="filter-housing-type">
                           <legend class="filter-title">Тип&nbsp;жилья:</legend>
                           <ul class="filter-list">
                               <li class="filter-item">
-                                  <label class="filter-conrol">
-                                      <input name="guruweba" type="radio" checked>Гостиницы
-                                  </label>
+                                <input class="filter-radio" type="radio" name="housing-type" id="radio-hotel" value="hotel" checked>                                
+                                <label class="filter-conrol" for="radio-hotel">Гостиницы </label>  
                               </li>
-                              <li class="filter-item"><input name="guruweba" type="radio" />Мотель</li>
-                              <li class="filter-item"><input name="guruweba" type="radio" />Аппартаменты</li>
+                              <li class="filter-item">
+                                <input class="filter-radio" type="radio" name="housing-type" id="radio-motel" value="motel" >                                
+                                <label class="filter-conrol" for="radio-motel">Мотель</label>  
+                              </li>
+                              <li class="filter-item">
+                                <input class="filter-radio" type="radio" name="housing-type" id="radio-apartments" value="apartments" >                                
+                                <label class="filter-conrol" for="radio-apartments">Аппартаменты</label>  
+                              </li>
                             </ul>
                       </fieldset>
+
+
                       <fieldset class="filter-group filter-range">
                         <legend class="filter-title">Стоимость,&nbsp;&#8381</legend>
                         <div class="range">
@@ -217,7 +230,7 @@
               <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru">
                   <label class="visually-hidden" for="email-subscribe">Введите Ваш email</label>
-                  <input class="subscribe-field" id="email-subscribe" type="email" placeholder="Ваш e-mail" required>
+                  <input class="subscribe-field" type="email" name="email" id="email-subscribe"  placeholder="Ваш e-mail" required>
                   <button class="subscribe-button button-blue">Подписаться</button>
               </form>
           </div>
