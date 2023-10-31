@@ -161,11 +161,6 @@ button {
   line-height: 26px;
 }
 
-
-.main-header {
-  min-height: 64px;
-}
-
 .navigation {
   display: flex;
   padding-left: 70px;
@@ -189,7 +184,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  max-width: 440px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -223,6 +218,7 @@ button {
 
 .navigation-link {
   display: block;
+  padding: 20px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -239,7 +235,7 @@ button {
   position: absolute;
   height: 2px;
   background-color: #756257;
-  bottom: -20px;
+  bottom: 0px;
   width: 100%;
 }
 
@@ -926,6 +922,7 @@ button {
 .range-fild[type="number"]::-webkit-inner-spin-button,
 .range-fild[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+  margin: 0;
 }
 
 
