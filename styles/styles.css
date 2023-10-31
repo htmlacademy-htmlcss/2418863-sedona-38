@@ -199,9 +199,10 @@ button {
   opacity: 0.6;
 }
 
+/*
 .navigation-item:focus {
   outline: 3px solid rgb(131, 179, 211);
-}
+}*/
 
 .navigation-item-user:hover {
   opacity: 0.6;
@@ -211,10 +212,11 @@ button {
   opacity: 0.6;
 }
 
+/*
 .navigation-link:focus {
   outline: 3px solid rgb(131, 179, 211);
 }
-
+*/
 
 .navigation-link {
   display: block;
@@ -253,7 +255,7 @@ button {
 .navigation-user-link {
   display: block;
   width: 44px;
-  height: 64px;
+  min-height: 60px;
   background-repeat: no-repeat;
   background-position: center;
   text-decoration: none;
