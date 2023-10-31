@@ -200,6 +200,27 @@ button {
   padding: 0 16px;
 }
 
+.navigation-item:hover {
+  opacity: 0.6;
+}
+
+.navigation-item:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.navigation-item-user:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+
 .navigation-link {
   display: block;
   font-weight: 700;
@@ -919,7 +940,39 @@ button {
 
 .range-slaider {
   height: 20px;
-  background-color: #7DB54F;
+}
+
+.range-scale {
+  width: 288px;
+  position: relative;
+  height: 4px;
+  background-color: white;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: red;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -230px;
+  position: absolute;
+}
+
+.toggle-max {
+  position: absolute;
+  top: -8px;
+  left: -20px;
 }
 
 
