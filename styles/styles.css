@@ -687,6 +687,45 @@ button {
   background-color: rgba(117, 97, 87, 0.3);
 }
 
+/*
+.footer-htmlacademy-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 115px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-mask-image: url(../images/footer/logo-footer.svg);
+  mask-image: url(../images/footer/logo-footer.svg);
+}
+
+.footer-htmlacademy-link::before {
+  content: "";
+  display: block;
+  width: 135px;
+  height: 33px;
+  background-size: 135px 33px;
+  background-color: black;
+  color: chocolate;
+
+}
+
+.footer-htmlacademy-link:hover {
+  color: red;
+  background-color: red;
+}
+
+.footer-htmlacademy-link:focus {
+  background-color: greenyellow;
+}
+
+.footer-htmlacademy-link:active {
+  background-color: blue;
+
+}*/
+
 /*Catalog*/
 
 .header-filter {
