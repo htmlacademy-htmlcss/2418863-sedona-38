@@ -199,10 +199,9 @@ button {
   opacity: 0.6;
 }
 
-/*
 .navigation-item:focus {
   outline: 3px solid rgb(131, 179, 211);
-}*/
+}
 
 .navigation-item-user:hover {
   opacity: 0.6;
@@ -272,7 +271,7 @@ button {
 .heart {
   display: flex;
   position: relative;
-  width: 20px;
+  max-width: 20px;
   height: 20px;
   justify-content: center;
   align-items: center;
@@ -548,7 +547,7 @@ button {
   display: block;
   margin: 0 auto;
   width: 376px;
-  height: 36px;
+  min-height: 36px;
   font-style: normal;
   font-size: 20px;
   line-height: 36px;
@@ -578,7 +577,6 @@ button {
   font-weight: 700;
   line-height: 36px;
   width: 232px;
-  outline: none;
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -1051,7 +1049,7 @@ button {
 
 .select-setting:disabled {
   cursor: default;
-  border: 5px solid rgb(0, 0, 0.3);
+  border: 2px solid rgb(0, 0, 0.3);
 }
 
 
@@ -1107,15 +1105,8 @@ button {
   border: 2px solid #000;
 }
 
-.sorting-link-toggle:hover,
-.sorting-link-toggle:active {
+.sorting-link-toggle:hover {
   border: 2px solid #000;
-  outline: none;
-}
-
-.sorting-link-toggle:focus {
-  outline: none;
-  border: 2px solid #68A2CA;
 }
 
 .sorting-view-tile {
@@ -1245,7 +1236,7 @@ button {
 }
 
 .stars-four {
-  width: 78px;
+  width: 90px;
 }
 
 .stars-three {
