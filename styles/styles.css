@@ -611,10 +611,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   max-width: 250px;
-  /*  min-height: 40px;*/
   padding: 0;
   list-style-type: none;
-  /* align-items: center;*/
   margin: 5px 0;
 }
 
@@ -635,14 +633,11 @@ button {
   fill: rgba(130, 179, 211, 0.3);
 }
 
-
-.footer-htmlacademy:hover {
-  fill: rgb(117, 97, 87);
-}
-
-
 .footer-phone {
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-phone-contact {
@@ -662,34 +657,29 @@ button {
   color: rgba(117, 97, 87, 0.3)
 }
 
-
-.footer-htmlacademy:hover svg path {
-  fill: rgba(117, 97, 87, 1);
-}
-
 /*Logo footer*/
 .footer-htmlacademy-link {
-  display: block;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 115px;
   height: 33px;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-mask-image: url(../images/footer/logo-footer.svg);
-  mask-image: url(../images/footer/logo-footer.svg);
+  padding: 8px 0;
 }
 
-.footer-htmlacademy-link:hover {
-  background-color: #756157;
+.footer-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-htmlacademy-link:focus {
-  background-color: #756157;
+.footer-author:hover svg path,
+.footer-htmlacademy-link:focus svg path {
+  fill: #756157;
 }
 
-.footer-htmlacademy-link:active {
-  background-color: rgba(117, 97, 87, 0.3);
+.footer-htmlacademy-link:active svg path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*
