@@ -380,6 +380,10 @@ button {
   grid-column: 1 / -1;
 }
 
+.advantages-broad .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.30);
+}
+
 .advantages-wrapper-text {
   width: 400px;
   background: #82B3D3;
@@ -912,18 +916,14 @@ button {
   opacity: 0.3;
 }
 
-
-
-
 .range {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
   gap: 2px;
 }
 
 .range-cost {
   position: relative;
-
 }
 
 .range-cost:hover {
@@ -965,51 +965,42 @@ button {
   margin: 0;
 }
 
-
 .range-fild-from {
   border-radius: 4px 0px 0px 4px;
 }
-
 
 .range-fild-to {
   border-radius: 0px 4px 4px 0px;
 }
 
-.range-slaider {
-  height: 20px;
-}
-
 .range-scale {
-  width: 288px;
   position: relative;
   height: 4px;
-  background-color: white;
+  background: rgb(255, 255, 255, 0.3);
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: red;
+  background-color: #fff;
 }
 
 .range-toggle {
+  position: absolute;
   width: 20px;
   height: 20px;
-  background: #ffffff;
-  border-radius: 4px;
+  padding: 0;
   cursor: pointer;
 }
 
 .toggle-min {
   top: -8px;
-  left: -230px;
-  position: absolute;
+  left: 0;
 }
 
 .toggle-max {
-  position: absolute;
   top: -8px;
-  left: -20px;
+  right: 0;
 }
 
 
