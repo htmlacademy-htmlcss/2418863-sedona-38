@@ -191,33 +191,48 @@
           </a>
         </section>
       </footer>
-<!--
-    </div>
-    <div class="popup window">
-      <section class=" popup-window-container">
-        <div class="popup-title-container "></div>
-        <form class="popup-window-form" action="" method="get"></form>
-         <ul class="popup-window-list">
+<!-
 
-          <li class="popup-window-list-item">
-            <label class="popup-search-text"></label>
-            <input class="popup input">
-            <p class="poput-label-text">kzkzkzkz</p>
-          </li>
+    <div class="modal-container">
+      <section class="modal">
+        <div class="modal-title-container ">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button" type="button"></button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="modal-search-group">
+            <legend class="visually-hidden"> Поиск гостиницы в Седоне</legend>
+            <ul class="modal-list"> 
+              <li class="modal-item">
+                <label class="modal-search-text" for="check-in-date">Дата&nbsp;Заезда:</label>
+                <input class="modal-input" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020" placeholder=" укажите дату">
+                <p class="modal-error-text">Мы не можем отправить вас в прошлое.</p>
+              </li>
+    
+              <li class="modal-item">
+                <label class="modal-search-text" for="check-in-date">Дата&nbsp;Выезда:</label>
+                <input class="modal-input" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2023" placeholder=" укажите дату">
+                <p class="modal-info-text">На эти даты есть свободные номера. Пока есть.</p>
+              </li>
+    
+              <li class="modal-item">
+                <ul class="modal-search-sublist">
+                  <li class="modal-search-sublist-item">
+                    <label class="modal-label-text" for="adults">Взрослые:</label>
+                    <div class="number-input-wrapper">
+                      <button class="modal-button modal-input-minus" id="adults-minus" type="button"></button>
+                      <input class="modal-input modal-number-input" id="adults" type="text" size="3" name="adults" placeholder="2">
+                      <button class="modal-number-button modal-input-plus" id="adults-plus" type="button"></button>
+                    </div>
 
-          <li class="popup-window-list-item">
-            <label class="popup-search-text"></label>
-            <input class="popup input">
-            <p class="poput-label-text">rgrtgrgr</p>
-          </li>
-
-          <li class="popup-window-list-item">
-          <ul class="popup-search-sublist">
-            <li class="popup-search-sublist-item"></li>
-            <li class="popup-search-sublist-item"></li>
-          </ul>
-         </li>
-         </ul>
+                  </li>
+                  <li class="modal-search-sublist-item"></li>
+                </ul>
+              </li>
+              <button>Найти Васю</button>
+            </ul>  
+          </fieldset>          
+        </form>
       </section>
     </div>-->
 

@@ -1380,3 +1380,115 @@ button {
 .subscribe-field:focus {
   outline: 3px solid rgb(131, 179, 211);
 }
+
+/*Модальное окно*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 717px;
+  /* position: absolute;
+  top: 396px;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;*/
+  box-sizing: border-box;
+  border-radius: 30px;
+
+
+}
+
+.modal-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.modal-title {
+  width: 413px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal-close-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  margin-right: -18px;
+  background-color: rgba(242, 242, 242, 1);
+  background-image: url(../images/modal/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-search-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-search-text {
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.modal-input {
+  width: 448px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  border: none;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.modal-error-text {
+  position: absolute;
+  bottom: -40px;
+  left: 140px;
+  color: red;
+}
+
+.modal-search-sublist {}
+
+.modal-search-sublist-item {}
