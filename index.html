@@ -44,7 +44,7 @@
 
       <main class="main-container" data-test="main">
         <h1 class="visually-hidden">Сайт города Седона.</h1>
-        <section class="welcome">
+        <section class="hero" data-test="hero">
           <img class="welcome-img" src="images/first-screen/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.Because the Grand Canyon sucks">
           <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
         </section>
@@ -56,7 +56,7 @@
               Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
             </p>
             <p class="advantages-reasons">
-              Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
           </div>
           
@@ -94,7 +94,7 @@
             <li class="advantages-item advantages-reverse advantages-broad" >
               <div class="advantages-wrapper-text">
                 <h3 class="advantages-title">
-                  Там есть мост Дьявола
+                  Там есть<br> мост Дьявола
                 </h3>
                 <p class="advantages-desсription">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -106,36 +106,35 @@
             </li>
           </ul>
 
-          <div class="service">
+          <div class="service" data-test="service">
             <h2 class="service-slogan">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
             <p class="service-text">Опытный персонал и качественное обслуживание!</p>
           </div>
-
           <ul class="service-list">
             <li class="service-item service-house fone-blue-light">
               <h3 class="service-title">Жилье</h3>
               <p class="service-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
               </p>
             </li>
             <li class="service-item service-food">
               <h3 class="service-title">Еда</h3>
               <p class="service-description">
-                Всегда заказывайте топовый фирменный бургер, вы не 
+                Всегда заказывайте<br> топовый фирменный бургер,<br> вы не 
                 разочаруетесь!
               </p>
             </li>
             <li class="service-item service-souvenirs fone-blue-light">
               <h3 class="service-title">Сувениры</h3>
               <p class="service-description">
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского,<br> но и настоящего местного<br> производства!
               </p>
             </li>
           </ul>
         </section>
 
         <section class="search" data-test="search">
-          <h2 class="search-title">Заинтерисовались?</h2>
+          <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-data ">
             Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
             предложения гостиниц в Седоне
@@ -181,7 +180,7 @@
         </section>
         <section class="footer-phone">
           <h2 class="visually-hidden" >Контакты</h2>
-          <a class="footer-phone-contact" href="tel:+78128121212">+7(812)812-12-12</a>
+          <a class="footer-phone-contact" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812-12-12</a>
         </section>
         <section class="footer-author">
           <h2 class="visually-hidden">Разработка сайта</h2>
@@ -193,7 +192,7 @@
       </footer>
 
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-close" data-test="catalog">
       <section class="modal">
         <div class="modal-title-container ">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -213,8 +212,7 @@
                 <label class="modal-search-text" for="check-in-date">Дата&nbsp;Выезда:</label>
                 <input class="modal-input" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2023" placeholder=" укажите дату">
                 <p class="modal-info-text">На эти даты есть свободные номера. Пока есть.</p>
-              </li>
-    
+              </li>   
               <li>
                 <ul class="modal-search-sublist">
                   <li class="modal-search-sublist-item">
@@ -224,7 +222,6 @@
                       <input class="modal-number-input" id="adults" type="text" size="3" name="adults" placeholder="2">
                       <button class="modal-button modal-input-plus" id="adults-plus" type="button"></button>
                     </div>
-
                   </li>
                   <li class="modal-search-sublist-item">
                     <label class="modal-search-text modal-label-kids" for="adults">Дети:</label>
