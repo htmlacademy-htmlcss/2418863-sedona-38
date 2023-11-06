@@ -14,6 +14,20 @@
   font-display: swap;
 }
 
+:root {
+  /* 1 вариант*/
+  --bg-blue-primary: #83B3D3;
+  --bg-blue-dark: #68A2CA;
+  --bg-blue-light: rgba(131, 179, 211, 0.20);
+  --bg-brown-primary: #756157;
+  --bg-brown-dark: #615048;
+  /* 2 вариант*/
+  --bg-blue-400: #83B3D3;
+  --bg-blue-700: #68A2CA;
+  --bg-blue-100: rgba(131, 179, 211, 0.20);
+  --bg-brown-400: #756157;
+  --bg-brown-700: #615048;
+}
 
 html {
   height: 100%;
@@ -81,6 +95,8 @@ h3 {
   font-weight: 700;
   line-height: 28px;
 }
+
+
 
 /*
 button {
@@ -199,7 +215,7 @@ button {
   opacity: 0.6;
 }
 
-.navigation-item-user:active {
+.navigation-user-link:active {
   opacity: 0.3;
 }
 
@@ -277,6 +293,11 @@ button {
 }
 
 .navigation-button:hover {
+  background: #615048;
+}
+
+
+.navigation-button:focus {
   background: #615048;
 }
 
@@ -560,10 +581,15 @@ button {
 }
 
 .subscribe-button:hover {
-  background: rgba(104, 162, 202, 1);
+  background: #68A2CA;
+}
+
+.subscribe-button:focus {
+  background: #68A2CA;
 }
 
 .subscribe-button:active {
+  background: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1313,6 +1339,7 @@ button {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
+
 
 .modal-container-close {
   display: none;
