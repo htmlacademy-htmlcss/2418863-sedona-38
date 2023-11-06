@@ -92,10 +92,10 @@ body {
   color: rgb(255, 255, 255, 0.3);
 }
 
-/*
+
 .button:disabled {
   background-color: rgb(var(--bg-disabled));
-}*/
+}
 
 
 .button-basic {
@@ -862,10 +862,6 @@ h3 {
   position: relative;
 }
 
-.range-cost:hover {
-  background-color: #E6E6E6;
-}
-
 .range-price {
   position: absolute;
   font-weight: 400;
@@ -878,7 +874,7 @@ h3 {
 
 .range-fild {
   width: 143px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   box-sizing: border-box;
   font-family: inherit;
   line-height: 24px;
@@ -892,6 +888,11 @@ h3 {
 .range-fild[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.range-fild:hover,
+.range-fild:focus {
+  background-color: #E6E6E6;
 }
 
 .range-fild-from {
