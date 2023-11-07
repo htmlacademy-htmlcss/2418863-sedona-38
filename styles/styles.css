@@ -310,7 +310,7 @@ h3 {
 
 .hero {
   background-image: url(../images/first-screen/welcome-decoration.svg), url(../images/first-screen/index-background.jpg);
-  background-color: #48D1CC;
+  background-color: rgba(131, 179, 211, 0.30);
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
@@ -515,6 +515,7 @@ h3 {
   background-image: url(../images/index-photo/subscribe-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: rgba(131, 179, 211, 0.30);
   color: #ffffff;
   text-align: center;
   padding: 96px 258px 104px;
@@ -646,6 +647,7 @@ h3 {
 .header-filter {
   background-image: url(../images/catalog/filter/backgroud-filter.jpg);
   background-repeat: no-repeat;
+  background-color: rgba(131, 179, 211, 0.30);
   height: 307px;
   background-size: cover;
   color: #ffffff;
@@ -1049,6 +1051,8 @@ h3 {
 .catalog-title-link {
   display: block;
   grid-column: 1/-1;
+  text-decoration: none;
+  color: #000000;
 }
 
 .catalog-title {
@@ -1070,8 +1074,6 @@ h3 {
 .catalog-hotel-link {
   display: grid;
   place-items: center;
-  /*justify-content: center;
-  align-items: center;*/
   text-decoration: none;
   min-height: 36px;
 }
@@ -1100,8 +1102,6 @@ h3 {
 .rating {
   display: grid;
   place-items: center;
-  /*justify-content: center;
-  align-items: center;*/
   margin: 0;
   border-radius: 4px;
   box-sizing: border-box;
