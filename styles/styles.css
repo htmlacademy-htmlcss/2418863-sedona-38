@@ -1201,6 +1201,7 @@ h3 {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+
 .modal-container-close {
   display: none;
 }
@@ -1267,6 +1268,7 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 48px;
 }
 
 .modal-item {
