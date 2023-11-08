@@ -154,23 +154,6 @@ body {
   text-align: center;
 }
 
-/*
-h2 {
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: center;
-}
-*/
 .advantages-reasons,
 .servise-text,
 .search-data {
@@ -401,7 +384,7 @@ h3 {
   bottom: -30px;
   width: 60px;
   left: 50%;
-  margin-left: -30px;
+  transform: translateX(-50%);
   height: 2px;
   background-color: rgba(0, 0, 0, 0.30);
 }
@@ -414,6 +397,7 @@ h3 {
 .advantages-img {
   display: block;
   max-width: 100%;
+  height: 100%;
 }
 
 .advantages-reverse {
@@ -935,7 +919,7 @@ h3 {
   margin-left: auto;
   margin-right: 70px;
   box-sizing: border-box;
-  padding: 14px 20px;
+  padding: 14px 20px 13px;
   font: inherit;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1226,10 +1210,10 @@ h3 {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-
+/*
 .modal-container-close {
   display: none;
-}
+}*/
 
 .modal {
   position: relative;
@@ -1321,7 +1305,6 @@ h3 {
 
 .modal-input-date {
   box-sizing: border-box;
-  opacity: 0.3;
   background-image: url(../images/modal/calendar.svg);
   background-position: calc(100% - 22px) 50%;
   background-repeat: no-repeat;
@@ -1383,9 +1366,9 @@ h3 {
 
 .tooltip-text {
   position: absolute;
-  transform: scale(1);
-  display: block;
+  /*display: none;*/
   width: 256px;
+  height: min-content;
   min-height: 143px;
   margin: 0;
   padding: 15px 18px 18px 22px;
@@ -1400,6 +1383,7 @@ h3 {
   border-radius: 10px;
   background: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
 }
 
 .tooltip-text::before {
@@ -1468,7 +1452,6 @@ h3 {
   padding: 18px 77px;
   font-size: 20px;
   line-height: 24px;
-  background-color: var(--bg-second);
 }
 
 /*
