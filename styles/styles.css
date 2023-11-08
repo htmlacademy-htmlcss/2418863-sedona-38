@@ -1215,7 +1215,7 @@ h3 {
   width: 452px;
 }
 
-/*Модальное окно*/
+/* Модальное окно*/
 .modal-container {
   position: fixed;
   top: 0;
@@ -1287,9 +1287,11 @@ h3 {
 }
 
 .modal-list {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
+  display: grid;
+  /*grid-template-columns: 247px 242px;*/
+  grid-template-columns: repeat(2, 1fr);
+  gap: 88px;
+  row-gap: 23px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1297,22 +1299,38 @@ h3 {
 }
 
 .modal-item {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /*align-items: center;*/
 }
 
-.modal-item::before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 20px;
+.modal-item-big {
+  grid-column: 1/-1;
+}
+
+.modal-input {
+  width: 440px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.modal-input-date {
+  box-sizing: border-box;
   opacity: 0.3;
   background-image: url(../images/modal/calendar.svg);
+  background-position: calc(100% - 22px) 50%;
   background-repeat: no-repeat;
-  background-position: center;
+}
+
+.modal-notice {
+  grid-column: 2/3;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .modal-search-text {
@@ -1324,17 +1342,38 @@ h3 {
   align-self: center;
 }
 
+.modal-error-text {
+  color: #FF5757;
+  font-size: 16px;
+}
+
+.modal-info-text {
+  left: 140px;
+  font-size: 16px;
+}
+
+
 .modal-label-kids {
   display: flex;
   align-items: center;
 }
 
-.modal-label-kids::after {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-  content: '';
+.modal-kids-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-toggle {
+  display: block;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: none;
   border-radius: 50%;
   background-color: var(--bg-second);
   background-image: url(../images/modal/icon-info.svg);
@@ -1342,44 +1381,39 @@ h3 {
   background-position: center;
 }
 
-.modal-input {
-  width: 448px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  font-family: inherit;
-  line-height: 24px;
-  font-weight: 700;
-  border: none;
-  background-color: #F2F2F2;
-}
-
-.modal-error-text {
+.tooltip-text {
   position: absolute;
-  bottom: -40px;
-  left: 140px;
-  color: #FF5757;
-  font-size: 16px;
-}
-
-.modal-info-text {
-  position: absolute;
-  bottom: -40px;
-  left: 140px;
-  font-size: 16px;
-}
-
-.modal-search-sublist {
-  display: flex;
+  transform: scale(1);
+  display: block;
+  width: 256px;
+  min-height: 143px;
   margin: 0;
-  padding: 0;
-  list-style: none;
-  justify-content: space-between;
+  padding: 15px 18px 18px 22px;
+  box-sizing: border-box;
+  top: 44px;
+  right: 0;
+  bottom: 0;
+  left: -114px;
+  font-size: 16px;
+  color: var(--bg-main);
+  line-height: 20px;
+  border-radius: 10px;
+  background: #333333;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 }
 
-.modal-search-sublist-item {
-  display: flex;
-  gap: 48px;
+.tooltip-text::before {
+  display: block;
+  width: 19px;
+  height: 9px;
+  content: '';
+  background-image: url(../images/modal/triangle.svg);
+  margin-top: -24px;
+  margin-bottom: 15px;
+  margin-left: 98.5px;
 }
+
+
 
 .number-input-wrapper {
   display: flex;
@@ -1437,6 +1471,7 @@ h3 {
   background-color: var(--bg-second);
 }
 
+/*
 .quantity-kids {
   position: absolute;
   transform: scale(1);
@@ -1467,4 +1502,4 @@ h3 {
   margin-top: -24px;
   margin-bottom: 15px;
   margin-left: 98.5px;
-}
+}*/

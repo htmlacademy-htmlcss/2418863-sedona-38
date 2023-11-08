@@ -193,7 +193,6 @@
         </section>
       </footer>
 
-
       <div class="modal-container modal-container-close" data-test="catalog">
         <section class="modal">
           <div class="modal-title-container ">
@@ -204,44 +203,53 @@
             <fieldset class="modal-search-group">
               <legend class="visually-hidden"> Поиск гостиницы в Седоне</legend>
               <ul class="modal-list"> 
-                <li class="modal-item">
+                <li class="modal-item modal-item-big">
                   <label class="modal-search-text" for="check-in-date">Дата&nbsp;Заезда:</label>
-                  <input class="modal-input" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020" placeholder=" укажите дату">
-                  <p class="modal-error-text">Мы не можем отправить вас в прошлое.</p>
+                  <input class="modal-input modal-input-date" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020" placeholder=" укажите дату">
+                  <p class="modal-notice modal-error-text">Мы не можем отправить вас в прошлое.</p>
                 </li>
       
-                <li class="modal-item">
+                <li class="modal-item modal-item-big">
                   <label class="modal-search-text" for="check-in-date">Дата&nbsp;Выезда:</label>
-                  <input class="modal-input" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2023" placeholder=" укажите дату">
-                  <p class="modal-info-text">На эти даты есть свободные номера. Пока есть.</p>
+                  <input class="modal-input  modal-input-date" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2023" placeholder=" укажите дату">
+                  <p class="modal-notice modal-info-text">На эти даты есть свободные номера. Пока есть.</p>
                 </li>   
-                <li>
-                  <ul class="modal-search-sublist">
-                    <li class="modal-search-sublist-item">
-                      <label class="modal-search-text" for="adults">Взрослые:</label>
-                      <div class="number-input-wrapper">
-                        <button class="modal-button modal-input-minus" id="adults-minus" type="button"></button>
-                        <input class="modal-number-input" id="adults" type="text" size="3" name="adults" placeholder="2">
-                        <button class="modal-button modal-input-plus" id="adults-plus" type="button"></button>
-                      </div>
-                    </li>
-                    <li class="modal-search-sublist-item">
-                      <label class="modal-search-text modal-label-kids" for="children">Дети:</label>
-                      <div class="number-input-wrapper">
-                        <button class="modal-button modal-input-minus" id="children-minus-second" type="button"></button>
-                        <input class="modal-number-input" id="children" type="text" size="3" name="children" placeholder="2">
-                        <button class="modal-button modal-input-plus" id="children-plus-second" type="button"></button>
-                        <p class="quantity-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно</p>
-                      </div>
-                    </li>
-                  </ul>
+               
+              
+                <li class="modal-item">
+                  <label class="modal-search-text" for="adults">Взрослые:</label>
+                  <div class="number-input-wrapper">
+                    <button class="modal-button modal-input-minus" id="adults-minus" type="button"></button>
+                    <input class="modal-number-input" id="adults" type="text" size="3" name="adults" placeholder="2">
+                    <button class="modal-button modal-input-plus" id="adults-plus" type="button"></button>
+                  </div>
                 </li>
+                <li class="modal-item">
+                   <div class="modal-kids-wrapper">
+                      <label class="modal-search-text" for="children">Дети:</label>
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-kids-label"></button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-kids-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+
+                        
+                      </span>
+
+                    </div>                  
+                    <div class="number-input-wrapper">
+                      <button class="modal-button modal-input-minus" id="children-minus-second" type="button"></button>
+                      <input class="modal-number-input" id="children" type="text" size="3" name="children" placeholder="2">
+                      <button class="modal-button modal-input-plus" id="children-plus-second" type="button"></button>
+                    </div>
+                </li>         
               </ul> 
               <button class="button modal-search-button" type="submit">Найти</button> 
             </fieldset>          
           </form>
         </section>
       </div>
+
+
+
     </div>
   </body>
 </html>
