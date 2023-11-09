@@ -293,19 +293,20 @@ body {
 }
 
 .hero {
+  height: 485px;
   background-image: url(../images/first-screen/welcome-decoration.svg), url(../images/first-screen/index-background.jpg);
   background-color: rgba(131, 179, 211, 0.30);
   color: var(--bg-main);
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
-  padding: 51px 70px 30px;
+  padding: 51px 70px;
   background-position: bottom;
+  box-sizing: border-box;
 }
 
 .welcome-img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 52px;
 }
 
 /* ADVANTAGES*/
