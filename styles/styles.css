@@ -1210,10 +1210,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/*
+
 .modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -1366,7 +1366,7 @@ body {
 
 .tooltip-text {
   position: absolute;
-  /*display: none;*/
+  display: none;
   width: 256px;
   height: min-content;
   min-height: 143px;
@@ -1383,7 +1383,11 @@ body {
   border-radius: 10px;
   background: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
-  transform: translateX(-50%);
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
 }
 
 .tooltip-text::before {

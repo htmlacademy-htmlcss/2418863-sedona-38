@@ -32,7 +32,7 @@
             </li>
             <li class="navigation-item-user">
               <a class="navigation-user-link navigation-icon-favourites" href="#">
-                <span class="visually-hidden"> Избранных отелей</span>
+                <span class="visually-hidden"> Избранные отели</span>
                 <span class="heart">12</span>
               </a>
             </li>
@@ -47,7 +47,6 @@
         <h1 class="visually-hidden">Сайт города Седона.</h1>
         <section class="hero" data-test="hero">
           <img class="welcome-img" src="images/first-screen/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.Because the Grand Canyon sucks">
-          <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
         </section>
 
         <section class="advantages" data-test="advantages">
@@ -141,7 +140,9 @@
             Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <a class="button  button-basic button-search" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button  button-basic button-search" href="#">Поиск гостиницы в Седоне
+            <span class="visually-hidden">Закрытие формы поиска гостиницы в Седоне.</span>
+          </a>
         </section>
 
         <section class="subscribe">
@@ -197,7 +198,9 @@
         <section class="modal">
           <div class="modal-title-container ">
             <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
-            <button class="modal-close-button" type="button"></button>
+            <button class="modal-close-button" type="button">
+              <span class="visually-hidden">Закрытие формы поиска гостиницы в Седоне.</span>
+            </button>
           </div>
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="modal-search-group">
@@ -219,13 +222,16 @@
                 <li class="modal-item">
                   <label class="modal-search-text" for="adults">Взрослые:</label>
                   <div class="number-input-wrapper">
-                    <button class="modal-button modal-input-minus" id="adults-minus" type="button"></button>
-                    <input class="modal-number-input" id="adults" type="text" size="3" name="adults" placeholder="2">
-                    <button class="modal-button modal-input-plus" id="adults-plus" type="button"></button>
+                    <button class="modal-button modal-input-minus" id="adults-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество взрослых на один.</span>
+                    </button>
+                    <input class="modal-number-input" id="adults" type="text" size="3" value="2" name="adults"  placeholder="2" min="0" max="99" required>
+                    <button class="modal-button modal-input-plus" id="adults-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество взрослых на один.</span>
+                    </button>
                   </div>
                 </li>
                 <li class="modal-item">
-
                    <div class="modal-kids-wrapper">
                       <label class="modal-search-text" for="children">Дети:</label>
                       <span class="tooltip">
@@ -233,7 +239,6 @@
                         <span class="tooltip-text" role="tooltip" id="tooltip-kids-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> 
                       </span>
                     </div> 
-                                     
                     <div class="number-input-wrapper">
                       <button class="modal-button modal-input-minus" id="children-minus-second" type="button"></button>
                       <input class="modal-number-input" id="children" type="text" size="3" name="children" placeholder="2">
