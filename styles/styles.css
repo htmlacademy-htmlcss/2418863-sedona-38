@@ -1210,10 +1210,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/*
+
 .modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -1291,6 +1291,7 @@ body {
 .modal-item-big {
   grid-column: 1/-1;
   grid-template-rows: 1fr minmax(25px, max-content);
+  column-gap: 17px;
 }
 
 .modal-input {
@@ -1327,12 +1328,14 @@ body {
 }
 
 .modal-search-text {
+  max-width: 119px;
   font-family: PT Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   align-self: center;
+
 }
 
 .modal-error-text {
