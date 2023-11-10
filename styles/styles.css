@@ -501,6 +501,7 @@ body {
   color: var(--bg-main);
   text-align: center;
   padding: 96px 258px 104px;
+  background-size: cover;
 }
 
 .subscribe-title {
@@ -575,6 +576,7 @@ body {
 }
 
 .footer-phone {
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -629,7 +631,6 @@ body {
   background-image: url("../images/catalog/filter/backgroud-filter.jpg");
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.30);
-  height: 307px;
   background-size: cover;
   color: var(--bg-main);
   text-decoration: none;
@@ -637,7 +638,7 @@ body {
 }
 
 .inner-header {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .breadcrumbs-list {
