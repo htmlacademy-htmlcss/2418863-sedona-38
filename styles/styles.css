@@ -871,6 +871,7 @@ body {
 }
 
 .filter-group {
+  width: 288px;
   border: none;
   padding: 0;
   margin: 0;
@@ -938,6 +939,7 @@ body {
 }
 
 .sorting-title {
+  max-width: 450px;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
