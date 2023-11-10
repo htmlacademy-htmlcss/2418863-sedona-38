@@ -155,7 +155,7 @@ body {
 }
 
 .advantages-reasons,
-.servise-text,
+.service-text,
 .search-data {
   text-align: center;
   font-size: 22px;
@@ -321,7 +321,7 @@ body {
 }
 
 .advantages-slogan {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -335,11 +335,11 @@ body {
   margin: 0;
 }
 
-.advantages-second-fone {
+.advantages-second-fon {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.fone-blue-light {
+.fon-blue-light {
   background: rgba(131, 179, 211, 0.20);
 }
 
@@ -390,7 +390,7 @@ body {
   background-color: rgba(0, 0, 0, 0.30);
 }
 
-.advantages-desсription {
+.advantages-description {
   width: 230px;
   margin: 0;
 }
@@ -518,7 +518,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  margin-bottom: 54px;
   max-width: 475px;
   margin: 0 auto 54px;
 }
@@ -901,7 +900,7 @@ body {
   opacity: 0.3;
 }
 
-.button-applay {
+.button-apply {
   min-height: 36px;
   margin-bottom: 36px;
 }
@@ -1002,11 +1001,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 40px;
+  padding: 0 0 40px;
   gap: 20px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
   border-bottom: 1px solid #E6E6E6;
 }
 
@@ -1315,6 +1312,7 @@ body {
   background-image: url(../images/modal/calendar.svg);
   background-position: calc(100% - 22px) 50%;
   background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 .modal-input-date:hover,
@@ -1330,7 +1328,7 @@ body {
 
 .modal-search-text {
   max-width: 119px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1411,7 +1409,7 @@ body {
   background-image: url(../images/modal/triangle.svg);
   margin-top: -24px;
   margin-bottom: 15px;
-  margin-left: 98.5px;
+  margin-left: 98px;
 }
 
 .number-input-wrapper {
@@ -1423,9 +1421,9 @@ body {
   min-height: 48px;
   padding: 10px 10px;
   box-sizing: border-box;
-  border-radius: var(--border-radius);
+  border-radius: 4px;
   align-self: center;
-  background-color: rgb(242, 242, 242);
+  background-color: #F2F2F2;
 
 }
 
