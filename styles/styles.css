@@ -536,7 +536,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 /* FOOTER*/
@@ -545,7 +545,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  padding: 40px 70px 30px 70px;
+  padding: 40px 70px 30px;
 }
 
 .footer-social-list {
@@ -832,11 +832,11 @@ body {
 }
 
 .range-fild-from {
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .range-fild-to {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .range-scale {
@@ -1227,7 +1227,7 @@ body {
 }
 
 .modal-title {
- /* width: 413px;*/
+  width: 413px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1416,7 +1416,7 @@ body {
   position: relative;
   min-width: 110px;
   min-height: 48px;
-  padding: 10px 10px;
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 4px;
   align-self: center;
