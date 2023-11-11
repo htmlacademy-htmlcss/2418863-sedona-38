@@ -410,6 +410,10 @@ body {
 }
 
 .service {
+  text-align: center;
+}
+
+.service-wrapper-text{
   padding: 64px 0;
 }
 
