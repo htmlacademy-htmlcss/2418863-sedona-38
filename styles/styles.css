@@ -67,7 +67,7 @@ body {
   --bg-disabled: #e5e5e5;
 }
 
-/* -- BUTTONS -- */
+/*BUTTONS*/
 
 .button {
   display: block;
@@ -135,7 +135,7 @@ body {
   background-color: var(--bg-select);
 }
 
-/*  Заголовки*/
+/*Заголовки*/
 .title {
   font-size: 30px;
   line-height: 36px;
@@ -306,7 +306,7 @@ body {
   margin: 0 auto;
 }
 
-/* ADVANTAGES*/
+/*ADVANTAGES*/
 
 .advantages {
   text-align: center;
@@ -405,7 +405,7 @@ body {
 .advantages-small {
   flex-direction: column;
   width: 400px;
-  padding: 112px 85px;
+  padding: 113px 85px 111px;
   box-sizing: border-box;
 }
 
@@ -416,6 +416,7 @@ body {
 .service-slogan {
   max-width: 505px;
   margin: 0 auto 20px;
+
 }
 
 .service-title {
@@ -492,7 +493,7 @@ body {
   margin: 0 auto 54px;
 }
 
-/*  блок подписки*/
+/*блок подписки*/
 .subscribe {
   background-image: url("../images/index-photo/subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -539,7 +540,7 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-/* FOOTER*/
+/*FOOTER*/
 
 .main-footer {
   display: flex;
@@ -808,7 +809,7 @@ body {
   top: 13px;
 }
 
-.range-fild {
+.range-field {
   width: 143px;
   padding: 12px 40px 12px 20px;
   box-sizing: border-box;
@@ -820,22 +821,22 @@ body {
   background-color: #f2f2f2;
 }
 
-.range-fild[type="number"]::-webkit-inner-spin-button,
-.range-fild[type="number"]::-webkit-outer-spin-button {
+.range-field[type="number"]::-webkit-inner-spin-button,
+.range-field[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
 
-.range-fild:hover,
-.range-fild:focus {
+.range-field:hover,
+.range-field:focus {
   background-color: #e6e6e6;
 }
 
-.range-fild-from {
+.range-field-from {
   border-radius: 4px 0 0 4px;
 }
 
-.range-fild-to {
+.range-field-to {
   border-radius: 0 4px 4px 0;
 }
 
