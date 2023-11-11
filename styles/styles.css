@@ -506,6 +506,7 @@ body {
   text-align: center;
   padding: 96px 258px 104px;
   background-size: cover;
+  object-fit: contain;
 }
 
 .subscribe-title {
@@ -1216,7 +1217,6 @@ body {
 
 .modal {
   position: relative;
-  top: 20px;
   margin: auto;
   padding: 64px 70px;
   background-color: var(--bg-main);
