@@ -1216,6 +1216,7 @@ body {
 
 .modal {
   position: relative;
+  top: 20px;
   margin: auto;
   padding: 64px 70px;
   background-color: var(--bg-main);
@@ -1233,13 +1234,12 @@ body {
 }
 
 .modal-title {
-  width: 413px;
+  max-width: 540px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 64px;
-  padding-right: 30px;
 }
 
 .modal-close-button {

@@ -192,27 +192,22 @@
           </a>
         </section>
       </footer>
-
-      <div class="modal-container modal-container-close" data-test="modal">
+      
+      <div class="modal-container" data-test="modal">
         <section class="modal">
-          <div class="modal-title-container ">
-            <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
-            <button class="modal-close-button" type="button">
-              <span class="visually-hidden">Закрытие формы поиска гостиницы в Седоне.</span>
-            </button>
-          </div>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="modal-search-group">
               <legend class="visually-hidden"> Поиск гостиницы в Седоне</legend>
               <ul class="modal-list"> 
                 <li class="modal-item modal-item-big">
                   <label class="modal-search-text" for="check-in-date">Дата&nbsp;Заезда:</label>
-                  <input class="modal-input modal-input-date" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020" placeholder=" укажите дату">
+                  <input class="modal-input modal-input-date" id="check-in-date" type="text" name="check-in-date" value="27 апреля 2020" placeholder="укажите дату">
                   <p class="modal-notice modal-error-text">Мы не можем отправить вас в прошлое.</p>
                 </li>
                 <li class="modal-item modal-item-big">
                   <label class="modal-search-text" for="check-out-date">Дата&nbsp;Выезда:</label>
-                  <input class="modal-input  modal-input-date" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2023" placeholder=" укажите дату">
+                  <input class="modal-input modal-input-date" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2021" placeholder="укажите дату">
                   <p class="modal-notice modal-info-text">На эти даты есть свободные номера. Пока есть.</p>
                 </li>   
                 <li class="modal-item">
@@ -221,7 +216,7 @@
                     <button class="modal-button modal-input-minus" id="adults-minus" type="button">
                       <span class="visually-hidden">Уменьшить количество взрослых на один.</span>
                     </button>
-                    <input class="modal-number-input" id="adults" type="number" value="2" name="adults"  placeholder="2" min="0" max="99" required>
+                    <input class="modal-number-input" id="adults" type="number"  value="2" name="adults"  placeholder="2" min="0" max="99" required>
                     <button class="modal-button modal-input-plus" id="adults-plus" type="button">
                       <span class="visually-hidden">Увеличить количество взрослых на один.</span>
                     </button>
@@ -251,6 +246,9 @@
               <button class="button button-second  modal-search-button" type="submit">Найти</button> 
             </fieldset>          
           </form>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрытие формы поиска гостиницы в Седоне.</span>
+          </button>
         </section>
       </div>
     </div>
