@@ -570,13 +570,13 @@ body {
   width: 47px;
   height: 40px;
 }
-/*test*/
-.footer-link:hover svg path,
-.footer-link:focus svg path {
+
+.footer-link:hover path,
+.footer-link:focus path {
   fill: var(--bg-second-dark);
 }
 
-.footer-link:active svg path {
+.footer-link:active path {
   fill: rgba(130, 179, 211, 0.3);
 }
 
@@ -621,12 +621,12 @@ body {
   align-items: center;
 }
 
-.footer-author:hover svg path,
-.footer-htmlacademy-link:focus svg path {
+.footer-author:hover path,
+.footer-htmlacademy-link:focus path {
   fill: var(--bg-basic);
 }
 
-.footer-htmlacademy-link:active svg path {
+.footer-htmlacademy-link:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
