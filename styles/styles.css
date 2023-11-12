@@ -777,6 +777,7 @@ body {
   height: 20px;
   margin: 0;
   background-color: var(--bg-main);
+  flex-shrink: 0;
 }
 
 .filter-checkbox {
